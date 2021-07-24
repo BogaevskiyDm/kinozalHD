@@ -2,6 +2,25 @@
   text-shadow: 0 0 5px #000000, 0 0 15px #000000, 0 0 20px #000000;
 }
 
+.panel {
+  margin-bottom: 30px;
+}
+.panel-primary {
+  border: none;
+}
+.panel-primary > .panel-heading {
+  background-color: #df8a13;
+  color: #ffffff;
+  border: none;
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+}
+.panel-body {
+  border: 1px solid #d5d5d5;
+  background-color: #f4f4f4;
+  border-radius: 0 0 4px 4px;
+}
+
 .navbar-inverse {
   background-color: #191919;
 }
@@ -55,6 +74,25 @@ body {
   letter-spacing: 0.2em;
   display: block;
   font-size: 1.15rem;
+}
+
+.main {
+  margin-bottom: 80px;
+}
+
+.left-sidebar {
+  margin-bottom: 80px;
+}
+.left-sidebar .panel:last-of-type {
+  margin: 0;
+}
+
+.vertical-slider {
+  border-radius: 4px;
+  overflow: hidden;
+}
+.vertical-slider__img {
+  width: 100%;
 }
 @media (min-width: 576px) {
   .header-logo__title {
