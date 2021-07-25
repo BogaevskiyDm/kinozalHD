@@ -1,16 +1,16 @@
 .panel {
-    margin-bottom: $gap*2;
+    margin-bottom: $gap * 2;
     &-primary {
         border: none;
         & > .panel-heading {
             background-color: $color-accent;
             color: $color-white;
             border: none;
-            font-size: 1.2rem;
+            font-size: 1.25rem;
             letter-spacing: 0.1em;
         }
     }
-    &-body{
+    &-body {
         border: 1px solid $color-gray;
         background-color: $color-gray-light;
         border-radius: 0 0 4px 4px;
@@ -71,4 +71,12 @@
 .navbar-toggle {
     float: none;
     margin-right: 0;
+}
+
+.input {
+    
+    &-lg,
+    &-group-lg > .form-control {
+        font-size: 0.875rem;
+    }
 }

@@ -11,3 +11,108 @@
         width: 100%;
     }
 }
+
+.user-login {
+    position: relative;
+    &__tabs {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        border: none;
+
+        a {
+            border: none !important;
+            background-color: transparent !important;
+            color: $color-gray;
+            padding: 14px 5px 5px 11px !important;
+        }
+        .active a {
+            color: $color-white !important;
+        }
+    }
+}
+
+.site-news-item {
+    position: relative;
+    clear: both;
+
+    min-height: 85px;
+    margin-bottom: $gap;
+
+    &:not(:last-child)::after {
+        position: absolute;
+        right: 0;
+        bottom: -4px;
+        width: calc(100% - 85px);
+        height: 1px;
+        content: "";
+        background-color: $color-gray;
+    }
+
+    &:hover {
+        .site-news-item__image {
+            background-color: $color-accent;
+            border-color: $color-accent;
+        }
+    }
+
+    &__image {
+        float: left;
+        width: 75px;
+        margin: 0 10px 10px 0;
+    }
+    &__title {
+        margin-bottom: 10px;
+        a {
+            @include block-shortener(1rem, 1.5, 50px, 2);
+        }
+    }
+    &__date {
+        text-align: right;
+        font-style: 0.8rem;
+        color: darken($color-gray, 30%);
+    }
+}
+
+.top-films {
+    &__body {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    &__list {
+        margin-bottom: 0;
+    }
+    &__item {
+        padding-right: 55px;
+        background-color: transparent;
+        margin-right: -1;
+        margin-left: -1;
+        color: $color-primary !important;
+
+        &:hover,
+        &:focus {
+            color: $color-white !important;
+            background-color: $color-accent !important;
+            border-color: $color-accent;
+
+            .badge {
+                background-color: $color-dark;
+            }
+        }
+
+        &:first-child {
+            border-radius: 0;
+            border-top: 0;
+        }
+        &:last-child {
+            border-radius: 0;
+            border-bottom: 0;
+        }
+    }
+    &__badge {
+        position: absolute;
+        top: 50%;
+        right: $gap;
+        transform: translateY(-50%);
+    }
+}
