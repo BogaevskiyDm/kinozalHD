@@ -7,7 +7,7 @@
             color: $color-white;
             border: none;
             font-size: 1.25rem;
-            letter-spacing: 0.1em;
+            letter-spacing: 0.08em;
         }
     }
     &-body {
@@ -78,5 +78,16 @@
     &-lg,
     &-group-lg > .form-control {
         font-size: 0.875rem;
+    }
+}
+.btn-primary {
+    float: right;
+    color: #fff;
+    background-color: $color-accent-light;
+    border-color: $color-accent-light;
+    &:hover,
+    &:focus{
+        background-color: $color-accent;
+        border-color: $color-accent;
     }
 }

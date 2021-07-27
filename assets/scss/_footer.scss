@@ -1,0 +1,17 @@
+.footer {
+    padding-top: 45px;
+    color: $color-gray;
+    background-color: $color-dark;
+    ul{
+        padding: 0;
+        list-style: none;
+    }
+    a{
+        color: lighten($color-dark, 29.8%);
+    }
+}
+.footer-bottom-single{
+text-align: center;
+margin: 20px 0;
+
+}
