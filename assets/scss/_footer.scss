@@ -1,17 +1,21 @@
 .footer {
+    margin-top: 38px;
     padding-top: 45px;
     color: $color-gray;
     background-color: $color-dark;
-    ul{
+    ul {
         padding: 0;
         list-style: none;
     }
-    a{
+    a {
         color: lighten($color-dark, 29.8%);
+        &:hover,
+        &:focus {
+            color: $color-white;
+        }
     }
 }
-.footer-bottom-single{
-text-align: center;
-margin: 20px 0;
-
+.footer-bottom-single {
+    text-align: center;
+    margin: 20px 0;
 }
