@@ -1,21 +1,22 @@
 html {
     font-size: $font-size;
 }
+
 body {
     font-size: $font-size;
     font-family: $font-main;
     overflow-y: scroll;
-  
 }
+
 a {
     color: $color-primary;
-
     &:hover,
     &:focus {
         text-decoration: none;
         color: $color-accent;
     }
 }
-.container{
+
+.container {
     margin-bottom: -80px;
 }

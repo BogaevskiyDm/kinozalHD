@@ -330,7 +330,7 @@ a:hover, a:focus {
 }
 .site-news-item__date {
   text-align: right;
-  font-style: 0.8rem;
+  font-size: 0.8rem;
   color: #898989;
 }
 
@@ -344,8 +344,8 @@ a:hover, a:focus {
 .top-films__item {
   padding-right: 55px;
   background-color: transparent;
-  margin-right: -1;
-  margin-left: -1;
+  margin-right: -1px;
+  margin-left: -1px;
   color: #165690 !important;
 }
 .top-films__item:hover, .top-films__item:focus {

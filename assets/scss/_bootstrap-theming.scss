@@ -74,7 +74,6 @@
 }
 
 .input {
-    
     &-lg,
     &-group-lg > .form-control {
         font-size: 0.875rem;
@@ -86,7 +85,7 @@
     background-color: $color-accent-light;
     border-color: $color-accent-light;
     &:hover,
-    &:focus{
+    &:focus {
         background-color: $color-accent;
         border-color: $color-accent;
     }
