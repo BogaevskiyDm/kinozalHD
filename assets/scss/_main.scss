@@ -89,7 +89,7 @@
     overflow: hidden;
     margin-bottom: -80px;
     &-row {
-        margin-right: 0;
+        margin-right: $gap;
         margin-left: 0;
         margin-bottom: 7.5px;
         margin-top: -$gap;
@@ -122,7 +122,6 @@
         }
         &__thumbnail {
             transition: background-color 0.25s;
-           
         }
         &__row {
             margin-left: 1px;
