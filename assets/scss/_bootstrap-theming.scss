@@ -1,100 +1,97 @@
 .panel {
+  border: none;
+  background-color: $color-gray-light;
+  box-shadow: none;
+  &:not(:last-of-type) {
+    margin-bottom: $gap * 2;
+  }
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  .panel-heading {
+    letter-spacing: 0.08em;
+    color: $color-white;
     border: none;
+    background-color: $color-accent;
+    font-size: 1.25rem;
+  }
+  &-body {
+    border: 1px solid $color-gray;
     background-color: $color-gray-light;
-    box-shadow: none;
-
-    &:not(:last-of-type) {
-        margin-bottom: $gap * 2;
-    }
-
-    &:last-of-type {
-        margin-bottom: 0;
-    }
-
-    .panel-heading {
-        letter-spacing: 0.08em;
-        color: $color-white;
-        border: none;
-        background-color: $color-accent;
-        font-size: 1.25rem;
-    }
-    &-body {
-        border: 1px solid $color-gray;
-        background-color: $color-gray-light;
-        border-radius: 0 0 4px 4px;
-    }
+    border-radius: 0 0 4px 4px;
+  }
 }
 
 .navbar-inverse {
-    background-color: $color-deep-dark;
-
-    .navbar-nav {
-        > .active > a {
-            background-color: $color-primary-dark;
-
-            &:hover,
-            &:focus {
-                background-color: $color-primary-light;
-            }
-        }
-        > li > a {
-            @include sm-min {
-                border-radius: 4px;
-            }
-            @include sm {
-                text-align: center;
-            }
-
-            &:focus,
-            &:hover {
-                background-color: $color-primary;
-            }
-        }
+  background-color: $color-deep-dark;
+  .navbar-nav {
+    >.active>a {
+      background-color: $color-primary-dark;
+      &:hover,
+      &:focus {
+        background-color: $color-primary-light;
+      }
     }
+    >li>a {
+      @include sm-min {
+        border-radius: 4px;
+      }
+      @include sm {
+        text-align: center;
+      }
+      &:focus,
+      &:hover {
+        background-color: $color-primary;
+      }
+    }
+  }
 }
 
 .navbar-left li {
-    @include sm-min {
-        margin: 5px 5px 5px 0px;
-    }
+  @include sm-min {
+    margin: 5px 5px 5px 0px;
+  }
 }
 
 .navbar-right li {
-    @include sm-min {
-        margin: 5px 0px 5px 5px;
-    }
+  @include sm-min {
+    margin: 5px 0px 5px 5px;
+  }
 }
+
 @include sm {
-    .navbar-left {
-        margin-bottom: 0;
-    }
-    .navbar-right {
-        margin-top: 0;
-    }
+  .navbar-left {
+    margin-bottom: 0;
+  }
+  .navbar-right {
+    margin-top: 0;
+  }
 }
 
 .navbar-header {
-    text-align: center;
+  text-align: center;
 }
+
 .navbar-toggle {
-    float: none;
-    margin-right: 0;
+  float: none;
+  margin-right: 0;
 }
 
 .input {
-    &-lg,
-    &-group-lg > .form-control {
-        font-size: 0.875rem;
-    }
+  &-lg,
+  &-group-lg>.form-control {
+    font-size: 0.875rem;
+  }
 }
+
 .btn-primary {
-    float: right;
-    color: #fff;
-    background-color: $color-accent-light;
-    border-color: $color-accent-light;
-    &:hover,
-    &:focus {
-        background-color: $color-accent;
-        border-color: $color-accent;
-    }
+  float: right;
+  color: #fff;
+  background-color: $color-accent-light;
+  border-color: #eea236;
+  &:hover,
+  &:focus {
+    background-color: $color-accent;
+    border-color: $color-accent;
+  }
 }

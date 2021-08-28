@@ -1,4 +1,5 @@
-.header-logo__description, .header-logo__title {
+@charset "UTF-8";
+.header-logo__description, А .header-logo__title {
   text-shadow: 0 0 5px #000000, 0 0 15px #000000, 0 0 20px #000000;
 }
 
@@ -56,7 +57,7 @@
   float: right;
   color: #fff;
   background-color: #f0ad4f;
-  border-color: #f0ad4f;
+  border-color: #eea236;
 }
 .btn-primary:hover, .btn-primary:focus {
   background-color: #df8a13;
@@ -128,7 +129,7 @@ section {
   background-size: cover;
   background-color: #232323;
 }
-.header-logo__title {
+А .header-logo__title {
   color: #df8a13;
   display: block;
   font-family: "PT Serif", serif;
@@ -168,6 +169,7 @@ section {
 }
 .new-films-item__thumbnail:hover, .new-films-item__thumbnail:focus {
   background-color: #df8a13;
+  border-color: #df8a13;
 }
 .new-films-item__thumbnail:hover .new-films-item__title, .new-films-item__thumbnail:focus .new-films-item__title {
   color: #ffffff;
@@ -257,6 +259,7 @@ section {
 }
 .films-news-item__jumbotron:hover .films-news-item__thumbnail, .films-news-item__jumbotron:focus .films-news-item__thumbnail {
   background-color: #df8a13;
+  border-color: #df8a13;
 }
 .films-news-item__jumbotron:hover .btn-primary, .films-news-item__jumbotron:focus .btn-primary {
   background-color: #df8a13;
@@ -446,7 +449,7 @@ section {
   h3 {
     font-size: 1.5rem;
   }
-  .header-logo__title {
+  А .header-logo__title {
     letter-spacing: 0.33em;
     margin-right: -0.33em;
     font-size: 3.5rem;
@@ -490,7 +493,7 @@ section {
   h3 {
     font-size: 1.25rem;
   }
-  .header-logo__title {
+  А .header-logo__title {
     letter-spacing: 0.33em;
     margin-right: -0.33em;
     font-size: 2.5rem;
